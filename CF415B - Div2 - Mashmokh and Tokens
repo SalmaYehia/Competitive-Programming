@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class MashmokhandTokens {
+
+	static Scanner sc;
+
+	public static void main(String[] args) {
+
+		sc = new Scanner(System.in);
+
+		//Read the inputs
+		int n = sc.nextInt();
+
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+
+		for (int i = 0; i < n; i++) {
+
+			long w = sc.nextLong();
+
+			//calculate k0
+			long mod = (w * a) % b;
+
+			long k0 = mod / a;
+
+			//print result
+			System.out.print(k0 + " ");
+		}
+
+	}
+
+}
